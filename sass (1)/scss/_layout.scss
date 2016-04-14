@@ -1,0 +1,14 @@
+.wrapper {
+  width: 100%;
+  height: $full-page-height;
+  max-width: 1500px;
+  background-color: black;
+}
+
+.container {
+  width: $container-width;
+  max-width: 800px;
+  height: $full-page-height;
+  margin: 0 auto;
+  background-color: red;
+}
