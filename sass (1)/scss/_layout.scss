@@ -1,8 +1,11 @@
+@import "modules/box-sizing";
+
 .wrapper {
   width: 100%;
   height: $full-page-height;
   max-width: 1500px;
   background-color: black;
+
 }
 
 .container {
@@ -11,4 +14,9 @@
   height: $full-page-height;
   margin: 0 auto;
   background-color: red;
+
+  @include responsive(phone){
+      background-color: yellow;
+
+  }
 }

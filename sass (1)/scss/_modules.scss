@@ -1,26 +1,5 @@
 @import "modules/box-sizing";
 
-// Screen Variables
-// --------------------------------------------------
-$responsive-sizes:	(
-	phablet: 550px,
-	tablet: 750px,
-	desktop-small: 1000px,
-	desktop-large: 1200px,
-);
-
-
-// Media Queries
-// --------------------------------------------------
-@mixin responsive($screen) {
-	@each $screen-type, $screen-size in $responsive-sizes {
-		@if $screen == $screen-type {
-			@media(min-width: $screen-size) {
-				@content;
-			}
-		}
-	}
-}
 
 
 h1 {
@@ -30,8 +9,16 @@ h1 {
     content: '\< 750px';
   }
 
+  @include responsive(phone){
+    font-size: 10px;
+
+    &:after {
+      content: '> 400px';
+    }
+  }
+
   @include responsive(tablet){
-    font-size: 30px;
+    font-size: 40px;
 
     &:after {
       content: '> 750px';
@@ -47,7 +34,7 @@ h1 {
   }
 
   @include responsive(desktop-large){
-    font-size: 48px;
+    font-size: 68px;
 
     &:after {
       content: '> 1200px';
