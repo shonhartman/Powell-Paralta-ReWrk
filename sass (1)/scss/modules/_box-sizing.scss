@@ -1,20 +1,23 @@
+
+// option 1 ------------------------------------------------------------------------
+
 // Screen Variables
 // --------------------------------------------------
-$responsive-sizes:	(
-	phone: 375px,
-	tablet: 750px,
-	desktop-small: 1000px,
-	desktop-large: 1200px,
-);
+// $responsive-sizes:	(
+// 	phone: 375px,
+// 	tablet: 750px,
+// 	desktop-small: 1000px,
+// 	desktop-large: 1200px,
+// );
 
 // Media Queries
 // --------------------------------------------------
-@mixin responsive($screen) {
-	@each $screen-type, $screen-size in $responsive-sizes {
-		@if $screen == $screen-type {
-			@media(min-width: $screen-size) {
-				@content;
-			}
-		}
-	}
-}
+// @mixin responsive($screen) {
+// 	@each $screen-type, $screen-size in $responsive-sizes {
+// 		@if $screen == $screen-type {
+// 			@media(min-width: $screen-size) {
+// 				@content;
+// 			}
+// 		}
+// 	}
+// }

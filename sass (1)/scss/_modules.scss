@@ -1,43 +1,43 @@
 @import "modules/box-sizing";
 
 
-
-h1 {
-  font-size: 24px;
-
-  &:after {
-    content: '\< 750px';
-  }
-
-  @include responsive(phone){
-    font-size: 10px;
-
-    &:after {
-      content: '> 400px';
-    }
-  }
-
-  @include responsive(tablet){
-    font-size: 40px;
-
-    &:after {
-      content: '> 750px';
-    }
-  }
-
-  @include responsive(desktop-small){
-    font-size: 36px;
-
-    &:after {
-      content: '> 1000px';
-    }
-  }
-
-  @include responsive(desktop-large){
-    font-size: 68px;
-
-    &:after {
-      content: '> 1200px';
-    }
-  }
-}
+// option 1 ------------------------------------------------------------------------
+// h1 {
+//   font-size: 24px;
+//
+//   &:after {
+//     content: '\< 750px';
+//   }
+//
+//   @include responsive(phone){
+//     font-size: 10px;
+//
+//     &:after {
+//       content: '> 400px';
+//     }
+//   }
+//
+//   @include responsive(tablet){
+//     font-size: 40px;
+//
+//     &:after {
+//       content: '> 750px';
+//     }
+//   }
+//
+//   @include responsive(desktop-small){
+//     font-size: 36px;
+//
+//     &:after {
+//       content: '> 1000px';
+//     }
+//   }
+//
+//   @include responsive(desktop-large){
+//     font-size: 68px;
+//
+//     &:after {
+//       content: '> 1200px';
+//     }
+//   }
+// }

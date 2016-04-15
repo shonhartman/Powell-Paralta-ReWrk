@@ -16,28 +16,3 @@ p {
   @media (min-width: 375px) {
     .container {
       background-color: yellow; } }
-
-h1 {
-  font-size: 24px; }
-  h1:after {
-    content: '\< 750px'; }
-  @media (min-width: 375px) {
-    h1 {
-      font-size: 10px; }
-      h1:after {
-        content: '> 400px'; } }
-  @media (min-width: 750px) {
-    h1 {
-      font-size: 40px; }
-      h1:after {
-        content: '> 750px'; } }
-  @media (min-width: 1000px) {
-    h1 {
-      font-size: 36px; }
-      h1:after {
-        content: '> 1000px'; } }
-  @media (min-width: 1200px) {
-    h1 {
-      font-size: 68px; }
-      h1:after {
-        content: '> 1200px'; } }
