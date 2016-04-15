@@ -6,8 +6,6 @@
   max-width: 1500px;
   background-color: black;
 
-
-
 }
 
 .container {
@@ -15,9 +13,17 @@
   max-width: 800px;
   height: $full-page-height;
   margin: 0 auto;
-  background-color: red;
+  background-color: yellow;
+
+    @media #{$information-tablet} {
+      transition: background-color, width 0.5s ease;
+      background-color: green;
+      width: 100%;
+
+    }
 
     @media #{$information-phone} {
+      transition: background-color, 1.5s ease;
       background-color: blue;
     }
 
