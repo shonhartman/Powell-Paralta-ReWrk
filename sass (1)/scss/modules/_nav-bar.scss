@@ -9,12 +9,12 @@
 
 h4 {
   float: left;
-  padding-right: 21px;
+  padding-right: 5px;
 }
 
 .social {
-  width: 370px;
-  height: 60px;
+  width: 275px;
+  height: 40px;
   background-color: green;
   float: right;
   margin-bottom: 10px;
@@ -24,41 +24,38 @@ h4 {
     }
 }
 
+@mixin social-box {
+  width: 35px;
+  height: 35px;
+  float: right;
+}
+
 .facebook {
+  @include social-box;
   background-color: blue;
-  width: 60px;
-  height: 60px;
-  float: left;
-  margin-right: 10px;
 }
 
 .fa-facebook {
   padding: 15px 0 0 19px;
   text-align: center;
   background-color: blue;
-  font-size: 35px;
 }
 
 .rss {
+  @include social-box;
   background-color: burlywood;
-  width: 60px;
-  height: 60px;
-  float: left;
   margin-right: 10px;
 }
 
 .fa-rss {
   padding: 15px 0 0 19px;
   text-align: center;
-  background-color: yellow;
-  font-size: 35px;
+  background-color: burlywood;
 }
 
 .twitter {
+  @include social-box;
   background-color: lightblue;
-  width: 60px;
-  height: 60px;
-  float: left;
   margin-right: 10px;
 }
 
@@ -66,21 +63,18 @@ h4 {
   padding: 15px 0 0 12px;
   text-align: center;
   background-color: lightblue;
-  font-size: 35px;
 }
 
 .youtube {
+  @include social-box;
   background-color: maroon;
-  width: 60px;
-  height: 60px;
-  float: left;
+  margin-right: 10px;
 }
 
 .fa-youtube {
   padding: 15px 0 0 15px;
   text-align: center;
   background-color: maroon;
-  font-size: 35px;
 }
 
 //nav-page-links -----------------------------------------------------------------
@@ -106,6 +100,9 @@ h3 {
   padding-top: 5px 0 0 1.25%;
   background-color: #333;
   clear: both;
+    @media #{$information-phone} {
+      display: none;
+    }
 }
 
 @mixin nav-box {
@@ -113,7 +110,6 @@ h3 {
   height: 20px;
   background-color: $accent;
   text-align: center;
-  // padding: .75px;
   float: left;
   box-shadow: $box-shadow;
     @media #{$information-tablet} {
