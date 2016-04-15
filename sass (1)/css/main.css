@@ -13,12 +13,12 @@
   height: 1000px;
   margin: 0 auto;
   background-color: yellow; }
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 800px) {
     .container {
       transition: background-color, width 0.5s ease;
       background-color: green;
       width: 100%; } }
-  @media only screen and (max-width: 420px) {
+  @media only screen and (max-width: 450px) {
     .container {
       transition: background-color, 1.5s ease;
       background-color: blue; } }
@@ -36,8 +36,13 @@ h4 {
 .social {
   width: 370px;
   height: 60px;
+  background-color: green;
   float: right;
   margin-bottom: 10px; }
+  @media only screen and (max-width: 800px) {
+    .social {
+      transition: display 0.5s ease;
+      display: none; } }
 
 .facebook {
   background-color: blue;
@@ -93,60 +98,87 @@ h4 {
 h3 {
   text-transform: uppercase;
   color: white;
-  font-size: .75rem;
-  background-color: #B42930; }
+  font-size: .5rem;
+  font-weight: 100;
+  background-color: #B42930;
+  margin-top: 5px; }
+  @media only screen and (max-width: 800px) {
+    h3 {
+      transition: display 0.5s ease;
+      background-color: #333; } }
+  @media only screen and (max-width: 450px) {
+    h3 {
+      display: none; } }
 
 .nav-page-links {
-  max-width: 100%;
-  height: 50px;
+  width: 100%;
+  height: 30px;
+  padding-top: 5px 0 0 1.25%;
+  background-color: #333;
   clear: both; }
 
 .sk8t-news {
   width: 23.5%;
-  height: 28px;
+  height: 20px;
   background-color: #B42930;
   text-align: center;
   float: left;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 800px) {
     .sk8t-news {
       transition: display 0.5s ease;
+      background-color: #333;
+      box-shadow: none; } }
+  @media only screen and (max-width: 450px) {
+    .sk8t-news {
       display: none; } }
 
 .skateboarders {
   width: 23.5%;
-  height: 28px;
+  height: 20px;
   background-color: #B42930;
   text-align: center;
   float: left;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   margin: 0 10px 0 10px; }
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 800px) {
     .skateboarders {
       transition: display 0.5s ease;
+      background-color: #333;
+      box-shadow: none; } }
+  @media only screen and (max-width: 450px) {
+    .skateboarders {
       display: none; } }
 
 .board-design {
   width: 23.5%;
-  height: 28px;
+  height: 20px;
   background-color: #B42930;
   text-align: center;
   float: left;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 800px) {
     .board-design {
       transition: display 0.5s ease;
+      background-color: #333;
+      box-shadow: none; } }
+  @media only screen and (max-width: 450px) {
+    .board-design {
       display: none; } }
 
 .contact-us {
   width: 23.5%;
-  height: 28px;
+  height: 20px;
   background-color: #B42930;
   text-align: center;
   float: left;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   margin: 0 0 0 10px; }
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 800px) {
     .contact-us {
       transition: display 0.5s ease;
+      background-color: #333;
+      box-shadow: none; } }
+  @media only screen and (max-width: 450px) {
+    .contact-us {
       display: none; } }
