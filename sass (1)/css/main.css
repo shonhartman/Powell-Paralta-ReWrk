@@ -13,6 +13,6 @@ p {
   height: 1000px;
   margin: 0 auto;
   background-color: red; }
-  @media (min-width: 375px) {
+  @media only screen and (max-width: 420px) {
     .container {
-      background-color: yellow; } }
+      background-color: blue; } }

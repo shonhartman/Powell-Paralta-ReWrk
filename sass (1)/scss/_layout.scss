@@ -6,6 +6,8 @@
   max-width: 1500px;
   background-color: black;
 
+
+
 }
 
 .container {
@@ -15,8 +17,8 @@
   margin: 0 auto;
   background-color: red;
 
-  @include responsive(phone){
-      background-color: yellow;
+    @media #{$information-phone} {
+      background-color: blue;
+    }
 
   }
-}
