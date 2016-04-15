@@ -1,10 +1,25 @@
+@mixin nav-box {
+  width: 241px;
+  height: 48px;
+  background-color: $accent;
+  text-align: center;
+  padding: .75px;
+  float: left;
+  box-shadow: $box-shadow;
+
+    @media #{$information-tablet} {
+      transition: display 0.5s ease;
+      display: none;
+    }
+}
+
 .nav-bar {
-  width: 1000px;
+  width: 100%;
   height: auto;
   margin: 0 auto;
 }
 
-//social icons
+//social icons -------------------------------------------------------
 
 h4 {
   float: left;
@@ -77,12 +92,13 @@ h4 {
   background-color: maroon;
   font-size: 35px;
 }
-//navbar
+
+//navbar -----------------------------------------------------------------
 h3 {
   text-transform: uppercase;
   color: white;
   font-size: 15px;
-  background-color: red;
+  background-color: $accent;
 }
 
 .navbar {
@@ -90,45 +106,22 @@ h3 {
   height: 50px;
   // background-color: black;
   clear: both;
-
 }
 
 .sk8t-news {
-  width: 241px;
-  height: 48px;
-  background-color: red;
-  text-align: center;
-  padding: .75px;
-  float: left;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);}
+  @include nav-box;
+}
 
 .skateboarders {
-  width: 241px;
-  height: 48px;
-  background-color: red;
-  text-align: center;
-  padding: .75px;
-  float: left;
+  @include nav-box;
   margin: 0 10px 0 10px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .board-design {
-  width: 241px;
-  height: 48px;
-  background-color: red;
-  text-align: center;
-  padding: .75px;
-  float: left;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);}
+  @include nav-box;
+}
 
 .contact-us {
-  width: 241px;
-  height: 48px;
-  background-color: red;
-  text-align: center;
-  padding: .75px;
-  float: left;
+  @include nav-box;
   margin: 0 0 0 10px;
-  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
 }

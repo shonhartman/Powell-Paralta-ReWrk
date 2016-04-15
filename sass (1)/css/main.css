@@ -24,7 +24,7 @@ p {
       background-color: blue; } }
 
 .nav-bar {
-  width: 1000px;
+  width: 100%;
   height: auto;
   margin: 0 auto; }
 
@@ -93,7 +93,7 @@ h3 {
   text-transform: uppercase;
   color: white;
   font-size: 15px;
-  background-color: red; }
+  background-color: #B42930; }
 
 .navbar {
   width: 1000px;
@@ -103,37 +103,69 @@ h3 {
 .sk8t-news {
   width: 241px;
   height: 48px;
-  background-color: red;
+  background-color: #B42930;
   text-align: center;
   padding: .75px;
   float: left;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
+  @media only screen and (max-width: 760px) {
+    .sk8t-news {
+      transition: display 0.5s ease;
+      display: none; } }
+  @media only screen and (max-width: 420px) {
+    .sk8t-news {
+      transition: background-color, 1.5s ease;
+      background-color: blue; } }
 
 .skateboarders {
   width: 241px;
   height: 48px;
-  background-color: red;
+  background-color: #B42930;
   text-align: center;
   padding: .75px;
   float: left;
-  margin: 0 10px 0 10px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  margin: 0 10px 0 10px; }
+  @media only screen and (max-width: 760px) {
+    .skateboarders {
+      transition: display 0.5s ease;
+      display: none; } }
+  @media only screen and (max-width: 420px) {
+    .skateboarders {
+      transition: background-color, 1.5s ease;
+      background-color: blue; } }
 
 .board-design {
   width: 241px;
   height: 48px;
-  background-color: red;
+  background-color: #B42930;
   text-align: center;
   padding: .75px;
   float: left;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
+  @media only screen and (max-width: 760px) {
+    .board-design {
+      transition: display 0.5s ease;
+      display: none; } }
+  @media only screen and (max-width: 420px) {
+    .board-design {
+      transition: background-color, 1.5s ease;
+      background-color: blue; } }
 
 .contact-us {
   width: 241px;
   height: 48px;
-  background-color: red;
+  background-color: #B42930;
   text-align: center;
   padding: .75px;
   float: left;
-  margin: 0 0 0 10px;
-  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2); }
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  margin: 0 0 0 10px; }
+  @media only screen and (max-width: 760px) {
+    .contact-us {
+      transition: display 0.5s ease;
+      display: none; } }
+  @media only screen and (max-width: 420px) {
+    .contact-us {
+      transition: background-color, 1.5s ease;
+      background-color: blue; } }
