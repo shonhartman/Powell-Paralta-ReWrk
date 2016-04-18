@@ -3,7 +3,9 @@
   width: 100%;
   height: $full-page-height;
   max-width: 1500px;
-  background-color: black;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 
 }
 
@@ -12,7 +14,7 @@
   max-width: 1015px;
   height: $full-page-height;
   margin: 0 auto;
-  background-color: yellow;
+  background-color: $slightly-transparent;
 
     @media #{$information-tablet} {
       transition: background-color, width 1.5s ease;
