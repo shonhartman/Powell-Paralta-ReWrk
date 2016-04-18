@@ -6,7 +6,8 @@ $white: #FEFEFE;
 $full-page-height: 1000px;
 $container-width: 50%;
 
-$information-phone: "only screen and (max-width : 450px)";
-$information-tablet: "only screen and (max-width : 800px)";
+$information-phone: "only screen and (max-width : 520px)";
+$information-tablet: "only screen and (max-width : 1015px)";
 
-$box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+$slightly-transparent: rgba(255, 255, 255, 0.5);
+$box-shadow: 2px 2px 2px 1px $slightly-transparent;

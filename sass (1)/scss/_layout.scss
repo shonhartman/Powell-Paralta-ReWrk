@@ -9,13 +9,13 @@
 
 .container {
   width: $container-width;
-  max-width: 800px;
+  max-width: 1015px;
   height: $full-page-height;
   margin: 0 auto;
   background-color: yellow;
 
     @media #{$information-tablet} {
-      transition: background-color, width 0.5s ease;
+      transition: background-color, width 1.5s ease;
       background-color: green;
       width: 100%;
 

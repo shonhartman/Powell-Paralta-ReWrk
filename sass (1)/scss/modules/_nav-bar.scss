@@ -30,16 +30,19 @@ h4 {
   float: right;
 }
 
+@mixin social-icon {
+  padding: 10px 0 0 12px;
+  text-align: center;
+  color: $slightly-transparent;
+}
+
 .facebook {
   @include social-box;
   background-color: blue;
+    .fa-facebook { @include social-icon ;}
 }
 
-.fa-facebook {
-  padding: 15px 0 0 19px;
-  text-align: center;
-  background-color: blue;
-}
+
 
 .rss {
   @include social-box;
@@ -47,11 +50,7 @@ h4 {
   margin-right: 10px;
 }
 
-.fa-rss {
-  padding: 15px 0 0 19px;
-  text-align: center;
-  background-color: burlywood;
-}
+.fa-rss { @include social-icon;}
 
 .twitter {
   @include social-box;
@@ -59,11 +58,7 @@ h4 {
   margin-right: 10px;
 }
 
-.fa-twitter {
-  padding: 15px 0 0 12px;
-  text-align: center;
-  background-color: lightblue;
-}
+.fa-twitter { @include social-icon;}
 
 .youtube {
   @include social-box;
@@ -71,11 +66,7 @@ h4 {
   margin-right: 10px;
 }
 
-.fa-youtube {
-  padding: 15px 0 0 15px;
-  text-align: center;
-  background-color: maroon;
-}
+.fa-youtube { @include social-icon;}
 
 //nav-page-links -----------------------------------------------------------------
 h3 {
