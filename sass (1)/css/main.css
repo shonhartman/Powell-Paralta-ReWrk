@@ -42,7 +42,6 @@ h4 {
 .social {
   width: 275px;
   height: 40px;
-  background-color: green;
   float: right;
   margin-bottom: 10px; }
   @media only screen and (max-width: 1015px) {
@@ -55,7 +54,7 @@ h4 {
   height: 35px;
   float: right;
   box-shadow: 0px 2px rgba(255, 255, 255, 0.5);
-  background-color: blue; }
+  background-color: #4169E1; }
   .facebook .fa-facebook {
     padding: 10px 0 0 12px;
     text-align: center;
@@ -66,7 +65,7 @@ h4 {
   height: 35px;
   float: right;
   box-shadow: 0px 2px rgba(255, 255, 255, 0.5);
-  background-color: burlywood;
+  background-color: #d7b02d;
   margin-right: 10px; }
   .rss .fa-rss {
     padding: 10px 0 0 12px;
@@ -78,7 +77,7 @@ h4 {
   height: 35px;
   float: right;
   box-shadow: 0px 2px rgba(255, 255, 255, 0.5);
-  background-color: lightblue;
+  background-color: #6699FF;
   margin-right: 10px; }
   .twitter .fa-twitter {
     padding: 10px 0 0 12px;

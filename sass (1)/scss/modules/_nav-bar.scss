@@ -18,7 +18,6 @@ h4 {
 .social {
   width: 275px;
   height: 40px;
-  background-color: green;
   float: right;
   margin-bottom: 10px;
     @media #{$information-tablet} {
@@ -42,20 +41,20 @@ h4 {
 
 .facebook {
   @include social-box;
-  background-color: blue;
+  background-color: #4169E1;
     .fa-facebook { @include social-icon ;}
 }
 
 .rss {
   @include social-box;
-  background-color: burlywood;
+  background-color: #d7b02d;
   margin-right: 10px;
     .fa-rss { @include social-icon;}
 }
 
 .twitter {
   @include social-box;
-  background-color: lightblue;
+  background-color: #6699FF;
   margin-right: 10px;
     .fa-twitter { @include social-icon;}
 }
