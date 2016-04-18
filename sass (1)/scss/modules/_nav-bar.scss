@@ -10,6 +10,9 @@
 h4 {
   float: left;
   padding-right: 5px;
+  color: $light-text;
+  text-transform: uppercase;
+  font-size: .25rem;
 }
 
 .social {
@@ -28,6 +31,7 @@ h4 {
   width: 35px;
   height: 35px;
   float: right;
+  box-shadow: $box-shadow;
 }
 
 @mixin social-icon {
@@ -42,31 +46,26 @@ h4 {
     .fa-facebook { @include social-icon ;}
 }
 
-
-
 .rss {
   @include social-box;
   background-color: burlywood;
   margin-right: 10px;
+    .fa-rss { @include social-icon;}
 }
-
-.fa-rss { @include social-icon;}
 
 .twitter {
   @include social-box;
   background-color: lightblue;
   margin-right: 10px;
+    .fa-twitter { @include social-icon;}
 }
-
-.fa-twitter { @include social-icon;}
 
 .youtube {
   @include social-box;
   background-color: maroon;
   margin-right: 10px;
+    .fa-youtube { @include social-icon;}
 }
-
-.fa-youtube { @include social-icon;}
 
 //nav-page-links -----------------------------------------------------------------
 h3 {
