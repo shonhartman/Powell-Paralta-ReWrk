@@ -1,18 +1,22 @@
 .news-container {
   background-color: darkgrey;
-  width: 1010px;
-  height: 500px;
+  width: $container-width;
+  height: $full-page-height;
   font-family: arial;
 }
 
+@mixin news-item {
+  background-color: $white;
+  float: left;
+  width: 165px;
+  height: 175px;
+}
+
 ul {
-  background: rgba(255, 255, 255, 0.8);
-  width: 1010px;
-  height: 400px;
   list-style: none;
   text-align: left;
-  line-height: 1.4rem;
-  padding: 10px 0 0 0;
+  line-height: .35rem;
+  padding: 5px 0 0 0;
 }
 
 ul small {
@@ -20,68 +24,51 @@ ul small {
 }
 
 li:nth-child(1) {
-  float: left;
-  background-color: white;
-  width: 330px;
-  height: 350px;
-  margin: 0 10px 0 0;
-  max-height: 350px;
+  @include news-item;
+  margin: 0 5px 0 0;
+  max-height: 175px;
 }
 
 li:nth-child(1) h2, small, p {
-  padding-left: 25px;
+  padding-left: 12.5px;
 }
 
 li:nth-child(2) {
-  float: left;
-  background-color: white;
-  width: 330px;
-  height: 350px;
-  margin-right: 10px;
+  @include news-item;
+  margin-right: 5px;
 }
 
 li:nth-child(2) h2, small, p {
-  padding-left: 25px;
+  padding-left: 12.5px;
 }
 
 li:nth-child(3) {
-  float: left;
-  background-color: white;
-  width: 330px;
-  height: 350px;
+  @include news-item;
 }
 
 li:nth-child(3) h2, small, p {
-  padding-left: 25px;
+  padding-left: 12.5px;
 }
 
 h2:nth-of-type(3) {
-  padding-top: 50px;
+  padding-top: 25px;
 }
 
 
 h3 {
-  // width: 100px;
   text-align: center;
-  // padding-left: 10px;
-  color: red;
-}
-
-#read2 {
-  // width: 100px;
-  // padding-left: 0;
 }
 
 #read3 {
-  padding-top: 45px;
+  padding-top: 22.5px;
 }
 
 
 h2 {
-  font-size: 1.5em;
+  font-size: .75em;
 }
 
 p {
-  font-size: .75rem;
-  padding-right: 25px;
+  font-size: .375rem;
+  padding-right: 12.5px;
 }

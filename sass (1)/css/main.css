@@ -189,65 +189,61 @@ h3 {
 
 .news-container {
   background-color: darkgrey;
-  width: 1010px;
-  height: 500px;
+  width: 50%;
+  height: 1000px;
   font-family: arial; }
 
 ul {
-  background: rgba(255, 255, 255, 0.8);
-  width: 1010px;
-  height: 400px;
   list-style: none;
   text-align: left;
-  line-height: 1.4rem;
-  padding: 10px 0 0 0; }
+  line-height: .35rem;
+  padding: 5px 0 0 0; }
 
 ul small {
   color: #666; }
 
 li:nth-child(1) {
+  background-color: #FEFEFE;
   float: left;
-  background-color: white;
-  width: 330px;
-  height: 350px;
-  margin: 0 10px 0 0;
-  max-height: 350px; }
+  width: 165px;
+  height: 175px;
+  margin: 0 5px 0 0;
+  max-height: 175px; }
 
 li:nth-child(1) h2, small, p {
-  padding-left: 25px; }
+  padding-left: 12.5px; }
 
 li:nth-child(2) {
+  background-color: #FEFEFE;
   float: left;
-  background-color: white;
-  width: 330px;
-  height: 350px;
-  margin-right: 10px; }
+  width: 165px;
+  height: 175px;
+  margin-right: 5px; }
 
 li:nth-child(2) h2, small, p {
-  padding-left: 25px; }
+  padding-left: 12.5px; }
 
 li:nth-child(3) {
+  background-color: #FEFEFE;
   float: left;
-  background-color: white;
-  width: 330px;
-  height: 350px; }
+  width: 165px;
+  height: 175px; }
 
 li:nth-child(3) h2, small, p {
-  padding-left: 25px; }
+  padding-left: 12.5px; }
 
 h2:nth-of-type(3) {
-  padding-top: 50px; }
+  padding-top: 25px; }
 
 h3 {
-  text-align: center;
-  color: red; }
+  text-align: center; }
 
 #read3 {
-  padding-top: 45px; }
+  padding-top: 22.5px; }
 
 h2 {
-  font-size: 1.5em; }
+  font-size: .75em; }
 
 p {
-  font-size: .75rem;
-  padding-right: 25px; }
+  font-size: .375rem;
+  padding-right: 12.5px; }
