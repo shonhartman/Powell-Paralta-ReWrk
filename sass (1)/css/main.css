@@ -114,9 +114,14 @@ h3 {
 
 .nav-page-links {
   width: 100%;
-  height: 30px;
-  padding-top: 5px 0 0 1.25%;
+  height: 20px;
+  padding: 5px 0 0 1.25%;
   clear: both; }
+  @media only screen and (max-width: 1015px) {
+    .nav-page-links {
+      padding: 0;
+      margin: 0;
+      height: 3px; } }
   @media only screen and (max-width: 520px) {
     .nav-page-links {
       display: none; } }
@@ -153,6 +158,9 @@ h3 {
   @media only screen and (max-width: 520px) {
     .skateboarders {
       display: none; } }
+  @media only screen and (max-width: 1015px) {
+    .skateboarders {
+      margin: 0; } }
 
 .board-design {
   width: 23.5%;
@@ -186,18 +194,21 @@ h3 {
   @media only screen and (max-width: 520px) {
     .contact-us {
       display: none; } }
+  @media only screen and (max-width: 1015px) {
+    .contact-us {
+      margin: 0; } }
 
 .news-container {
   background-color: darkgrey;
-  width: 50%;
+  width: 100%;
   height: 1000px;
-  font-family: arial; }
+  font-family: arial;
+  margin: 0 auto; }
 
 ul {
   list-style: none;
   text-align: left;
-  line-height: .35rem;
-  padding: 5px 0 0 0; }
+  margin-top: 0; }
 
 ul small {
   color: #666; }
@@ -205,7 +216,7 @@ ul small {
 li:nth-child(1) {
   background-color: #FEFEFE;
   float: left;
-  width: 165px;
+  width: 200px;
   height: 175px;
   margin: 0 5px 0 0;
   max-height: 175px; }
@@ -216,7 +227,7 @@ li:nth-child(1) h2, small, p {
 li:nth-child(2) {
   background-color: #FEFEFE;
   float: left;
-  width: 165px;
+  width: 200px;
   height: 175px;
   margin-right: 5px; }
 
@@ -226,7 +237,7 @@ li:nth-child(2) h2, small, p {
 li:nth-child(3) {
   background-color: #FEFEFE;
   float: left;
-  width: 165px;
+  width: 200px;
   height: 175px; }
 
 li:nth-child(3) h2, small, p {
