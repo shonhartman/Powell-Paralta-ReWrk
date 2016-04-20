@@ -11,7 +11,8 @@ i {
   background-image: url("../images/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative; }
+  position: relative;
+  z-index: -1; }
   .wrapper:after {
     content: '';
     position: absolute;
@@ -19,25 +20,24 @@ i {
     left: 0%;
     width: 100%;
     height: 100%;
-    box-shadow: inset 0px 0px 150px 60px rgba(0, 0, 0, 0.8);
-    z-index: 1; }
+    background-color: rgba(0, 0, 0, 0.6); }
 
 .container {
   width: 50%;
-  max-width: 1015px;
+  max-width: 630px;
   height: 1000px;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.5);
-  z-index: 2; }
+  position: relative;
+  z-index: 1; }
   @media only screen and (max-width: 1065px) {
     .container {
       transition: background-color, width 1.5s ease;
-      background-color: green;
       width: 100%; } }
   @media only screen and (max-width: 520px) {
     .container {
       transition: background-color, 1.5s ease;
-      background-color: blue; } }
+      background-color: #484846; } }
 
 .nav-bar {
   width: 100%;
@@ -210,7 +210,6 @@ h3 {
       margin: 0; } }
 
 .news-container {
-  background-color: darkgrey;
   width: 100%;
   height: 400px;
   font-family: arial;
@@ -271,12 +270,14 @@ h2:nth-of-type(3) {
 h3 {
   text-align: center; }
 
-#read3 {
-  padding-top: 22.5px; }
-
 h2 {
   font-size: .75em; }
 
 p {
   font-size: .375rem;
   padding-right: 12.5px; }
+
+.hero {
+  width: 100%;
+  height: 200px;
+  background-color: yellow; }

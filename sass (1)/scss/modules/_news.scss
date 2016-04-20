@@ -1,5 +1,5 @@
 .news-container {
-  background-color: darkgrey;
+  // background-color: darkgrey;
   width: 100%;
   height: $full-page-height - 600px;
   font-family: arial;
@@ -15,11 +15,7 @@
   height: 175px;
 }
 
-ul {
-  list-style: none;
-  // text-align: left;
-  // margin-top: 0;
-}
+ul { list-style: none; }
 
 ul small {
   color: #666;
@@ -43,10 +39,10 @@ li:nth-child(2) {
   // margin-right: 5px;
   left: 50%;
   transform:translateX(-50%);
-  @media #{$information-phone} {
-    transition: display 0.5s ease;
-    display: none;;
-  }
+    @media #{$information-phone} {
+      transition: display 0.5s ease;
+      display: none;;
+    }
 }
 
 li:nth-child(2) h2, small, p {
@@ -70,18 +66,9 @@ h2:nth-of-type(3) {
 }
 
 
-h3 {
-  text-align: center;
-}
+h3 { text-align: center; }
 
-#read3 {
-  padding-top: 22.5px;
-}
-
-
-h2 {
-  font-size: .75em;
-}
+h2 { font-size: .75em; }
 
 p {
   font-size: .375rem;
