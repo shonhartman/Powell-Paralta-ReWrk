@@ -10,15 +10,26 @@ i {
   max-width: 1500px;
   background-image: url("../images/bg.jpg");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  position: relative; }
+  .wrapper:after {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0px 0px 150px 60px rgba(0, 0, 0, 0.8);
+    z-index: 1; }
 
 .container {
   width: 50%;
   max-width: 1015px;
   height: 1000px;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.5); }
-  @media only screen and (max-width: 1015px) {
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 2; }
+  @media only screen and (max-width: 1065px) {
     .container {
       transition: background-color, width 1.5s ease;
       background-color: green;
@@ -45,7 +56,7 @@ h4 {
   height: 40px;
   float: right;
   margin-bottom: 10px; }
-  @media only screen and (max-width: 1015px) {
+  @media only screen and (max-width: 1065px) {
     .social {
       transition: display 0.5s ease;
       display: none; } }
@@ -104,7 +115,7 @@ h3 {
   font-weight: 100;
   background-color: #B42930;
   margin-top: 5px; }
-  @media only screen and (max-width: 1015px) {
+  @media only screen and (max-width: 1065px) {
     h3 {
       transition: display 0.5s ease;
       background-color: #333; } }
@@ -117,7 +128,7 @@ h3 {
   height: 20px;
   padding: 5px 0 0 1.25%;
   clear: both; }
-  @media only screen and (max-width: 1015px) {
+  @media only screen and (max-width: 1065px) {
     .nav-page-links {
       padding: 0;
       margin: 0;
@@ -133,7 +144,7 @@ h3 {
   text-align: center;
   float: left;
   box-shadow: 0px 2px rgba(255, 255, 255, 0.5); }
-  @media only screen and (max-width: 1015px) {
+  @media only screen and (max-width: 1065px) {
     .sk8t-news {
       transition: display 0.5s ease;
       background-color: #333;
@@ -150,7 +161,7 @@ h3 {
   float: left;
   box-shadow: 0px 2px rgba(255, 255, 255, 0.5);
   margin: 0 10px 0 10px; }
-  @media only screen and (max-width: 1015px) {
+  @media only screen and (max-width: 1065px) {
     .skateboarders {
       transition: display 0.5s ease;
       background-color: #333;
@@ -158,7 +169,7 @@ h3 {
   @media only screen and (max-width: 520px) {
     .skateboarders {
       display: none; } }
-  @media only screen and (max-width: 1015px) {
+  @media only screen and (max-width: 1065px) {
     .skateboarders {
       margin: 0; } }
 
@@ -169,7 +180,7 @@ h3 {
   text-align: center;
   float: left;
   box-shadow: 0px 2px rgba(255, 255, 255, 0.5); }
-  @media only screen and (max-width: 1015px) {
+  @media only screen and (max-width: 1065px) {
     .board-design {
       transition: display 0.5s ease;
       background-color: #333;
@@ -186,7 +197,7 @@ h3 {
   float: left;
   box-shadow: 0px 2px rgba(255, 255, 255, 0.5);
   margin: 0 0 0 10px; }
-  @media only screen and (max-width: 1015px) {
+  @media only screen and (max-width: 1065px) {
     .contact-us {
       transition: display 0.5s ease;
       background-color: #333;
@@ -194,51 +205,62 @@ h3 {
   @media only screen and (max-width: 520px) {
     .contact-us {
       display: none; } }
-  @media only screen and (max-width: 1015px) {
+  @media only screen and (max-width: 1065px) {
     .contact-us {
       margin: 0; } }
 
 .news-container {
   background-color: darkgrey;
   width: 100%;
-  height: 1000px;
+  height: 400px;
   font-family: arial;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
 
 ul {
-  list-style: none;
-  text-align: left;
-  margin-top: 0; }
+  list-style: none; }
 
 ul small {
   color: #666; }
 
 li:nth-child(1) {
   background-color: #FEFEFE;
-  float: left;
-  width: 200px;
+  position: absolute;
+  width: 175px;
   height: 175px;
   margin: 0 5px 0 0;
-  max-height: 175px; }
+  max-height: 175px;
+  left: 0; }
 
 li:nth-child(1) h2, small, p {
-  padding-left: 12.5px; }
+  padding-left: 12.5px;
+  float: left;
+  left: 0; }
 
 li:nth-child(2) {
   background-color: #FEFEFE;
-  float: left;
-  width: 200px;
+  position: absolute;
+  width: 175px;
   height: 175px;
-  margin-right: 5px; }
+  left: 50%;
+  transform: translateX(-50%); }
+  @media only screen and (max-width: 520px) {
+    li:nth-child(2) {
+      transition: display 0.5s ease;
+      display: none; } }
 
 li:nth-child(2) h2, small, p {
   padding-left: 12.5px; }
 
 li:nth-child(3) {
   background-color: #FEFEFE;
-  float: left;
-  width: 200px;
-  height: 175px; }
+  position: absolute;
+  width: 175px;
+  height: 175px;
+  right: 0; }
+  @media only screen and (max-width: 520px) {
+    li:nth-child(3) {
+      display: none; } }
 
 li:nth-child(3) h2, small, p {
   padding-left: 12.5px; }
