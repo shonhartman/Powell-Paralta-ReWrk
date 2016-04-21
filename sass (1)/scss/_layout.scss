@@ -30,14 +30,11 @@
 
     @media #{$information-tablet} {
       transition: background-color, width 1.5s ease;
-      // background-color: green;
       width: 100%;
-
     }
 
     @media #{$information-phone} {
       transition: background-color, 1.5s ease;
       background-color: $dark-text;
     }
-
   }
