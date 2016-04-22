@@ -16,11 +16,14 @@ h2 {
   font-size: 12px;
 }
 
-h3 { text-align: center; }
+h3 {
+  text-align: center;
+  color: $accent;
+}
 
 p {
   font-size: 6px;
-  line-height: 15px;
+  line-height: 12px;
   @include text-padding;
 }
 

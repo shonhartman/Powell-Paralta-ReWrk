@@ -2,7 +2,25 @@
   width: 100%;
   height: auto;
   margin: 0 auto;
+
+
+  h3 {
+    text-transform: uppercase;
+    color: white;
+    font-size: .5rem;
+    font-weight: 100;
+    // background-color: $accent;
+    margin-top: 5px;
+      @media #{$information-tablet} {
+        transition: display 0.5s ease;
+        background-color: #333;
+      }
+      @media #{$information-phone} {
+        display: none;
+      }
+  }
 }
+
 
 //social icons -------------------------------------------------------
 
@@ -66,21 +84,7 @@ h4 {
 }
 
 //nav-page-links -----------------------------------------------------------------
-h3 {
-  text-transform: uppercase;
-  color: white;
-  font-size: .5rem;
-  font-weight: 100;
-  // background-color: $accent;
-  margin-top: 5px;
-    @media #{$information-tablet} {
-      transition: display 0.5s ease;
-      background-color: #333;
-    }
-    @media #{$information-phone} {
-      display: none;
-    }
-}
+
 
 .nav-page-links {
   width: 100%;
