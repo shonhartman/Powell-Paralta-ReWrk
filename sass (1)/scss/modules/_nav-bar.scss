@@ -3,7 +3,6 @@
   height: auto;
   margin: 0 auto;
 
-
   h3 {
     text-transform: uppercase;
     color: white;
@@ -102,11 +101,12 @@ h4 {
 }
 
 @mixin nav-box {
-  width: 23.5%;
+  width: 125px;
   height: 20px;
   background-color: $accent;
   text-align: center;
   float: left;
+  position: absolute;
   box-shadow: $box-shadow;
     @media #{$information-tablet} {
       transition: display 0.5s ease;
@@ -118,22 +118,43 @@ h4 {
     }
 }
 
-.sk8t-news {@include nav-box;}
+.sk8t-news {
+  @include nav-box;
+  left: 0;
+    @media #{$information-tablet} {
+      margin: 0;
+      width: 26%;
+    }
+}
 
 .skateboarders {
   @include nav-box;
   margin: 0 10px 0 10px;
-  @media #{$information-tablet} {
-    margin: 0;
-  }
+  left: 24.5%;
+  margin-left: 1%;
+    @media #{$information-tablet} {
+      margin: 0;
+      width: 26%;
+    }
 }
 
-.board-design {@include nav-box;}
+.board-design {
+  @include nav-box;
+  right: 25.3%;
+  margin-left: 1%;
+    @media #{$information-tablet} {
+      margin: 0;
+      width: 26%;
+    }
+
+}
 
 .contact-us {
   @include nav-box;
   margin: 0 0 0 10px;
-  @media #{$information-tablet} {
+  right: 0;
+    @media #{$information-tablet} {
     margin: 0;
-  }
+    width: 26%;
+    }
 }

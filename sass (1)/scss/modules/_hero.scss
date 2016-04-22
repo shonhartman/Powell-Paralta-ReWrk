@@ -1,5 +1,5 @@
 @mixin hero-sizing {
-  width: calc(100% - 5px);
+  width: calc(100% - 10px);
   height: $box-height;
   margin-top: 10px;
     @media #{$information-tablet} {
@@ -9,7 +9,6 @@
     @media #{$information-phone} {
       display: none;
     }
-
 }
 
 .logo {
@@ -26,7 +25,7 @@
 
 .hero-photo {
   @include hero-sizing;
-  height: $box-height +5px;
+  height: calc($box-height + 5px);
   border: 5px solid $white;
   background-image: url("../images/top-image.png");
   background-size: 825px 508.2px;
@@ -37,12 +36,10 @@
 
 #overlay {
 @include hero-sizing;
-height: $box-height +5px;
+width: 100%;
 background-image: url("http://transparenttextures.com/patterns/clean-gray-paper.png");
-// opacity: 0.6;
+opacity: 0.7;
 position: absolute;
-top: 0;
-left: 0;
+bottom: 0;
 z-index: 1;
-
 }

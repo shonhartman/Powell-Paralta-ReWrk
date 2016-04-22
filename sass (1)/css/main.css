@@ -48,7 +48,7 @@ small {
 
 .container {
   width: 50%;
-  max-width: 630px;
+  max-width: 530px;
   height: 1000px;
   margin: 0 auto;
   position: relative;
@@ -159,12 +159,14 @@ h4 {
       display: none; } }
 
 .sk8t-news {
-  width: 23.5%;
+  width: 125px;
   height: 20px;
   background-color: #B42930;
   text-align: center;
   float: left;
-  box-shadow: 0px 2px rgba(255, 255, 255, 0.5); }
+  position: absolute;
+  box-shadow: 0px 2px rgba(255, 255, 255, 0.5);
+  left: 0; }
   @media only screen and (max-width: 1065px) {
     .sk8t-news {
       transition: display 0.5s ease;
@@ -173,15 +175,22 @@ h4 {
   @media only screen and (max-width: 520px) {
     .sk8t-news {
       display: none; } }
+  @media only screen and (max-width: 1065px) {
+    .sk8t-news {
+      margin: 0;
+      width: 26%; } }
 
 .skateboarders {
-  width: 23.5%;
+  width: 125px;
   height: 20px;
   background-color: #B42930;
   text-align: center;
   float: left;
+  position: absolute;
   box-shadow: 0px 2px rgba(255, 255, 255, 0.5);
-  margin: 0 10px 0 10px; }
+  margin: 0 10px 0 10px;
+  left: 24.5%;
+  margin-left: 1%; }
   @media only screen and (max-width: 1065px) {
     .skateboarders {
       transition: display 0.5s ease;
@@ -192,15 +201,19 @@ h4 {
       display: none; } }
   @media only screen and (max-width: 1065px) {
     .skateboarders {
-      margin: 0; } }
+      margin: 0;
+      width: 26%; } }
 
 .board-design {
-  width: 23.5%;
+  width: 125px;
   height: 20px;
   background-color: #B42930;
   text-align: center;
   float: left;
-  box-shadow: 0px 2px rgba(255, 255, 255, 0.5); }
+  position: absolute;
+  box-shadow: 0px 2px rgba(255, 255, 255, 0.5);
+  right: 25.3%;
+  margin-left: 1%; }
   @media only screen and (max-width: 1065px) {
     .board-design {
       transition: display 0.5s ease;
@@ -209,15 +222,21 @@ h4 {
   @media only screen and (max-width: 520px) {
     .board-design {
       display: none; } }
+  @media only screen and (max-width: 1065px) {
+    .board-design {
+      margin: 0;
+      width: 26%; } }
 
 .contact-us {
-  width: 23.5%;
+  width: 125px;
   height: 20px;
   background-color: #B42930;
   text-align: center;
   float: left;
+  position: absolute;
   box-shadow: 0px 2px rgba(255, 255, 255, 0.5);
-  margin: 0 0 0 10px; }
+  margin: 0 0 0 10px;
+  right: 0; }
   @media only screen and (max-width: 1065px) {
     .contact-us {
       transition: display 0.5s ease;
@@ -228,7 +247,8 @@ h4 {
       display: none; } }
   @media only screen and (max-width: 1065px) {
     .contact-us {
-      margin: 0; } }
+      margin: 0;
+      width: 26%; } }
 
 .news-container {
   background-color: darkgrey;
@@ -268,7 +288,7 @@ li:nth-child(3) {
       display: none; } }
 
 .logo {
-  width: calc(100% - 5px);
+  width: calc(100% - 10px);
   height: 175px;
   margin-top: 10px;
   background-image: url("../images/peralta-logo.png");
@@ -288,10 +308,10 @@ li:nth-child(3) {
       display: none; } }
 
 .hero-photo {
-  width: calc(100% - 5px);
+  width: calc(100% - 10px);
   height: 175px;
   margin-top: 10px;
-  height: 180px;
+  height: calc($box-height + 5px);
   border: 5px solid #FEFEFE;
   background-image: url("../images/top-image.png");
   background-size: 825px 508.2px;
@@ -307,14 +327,14 @@ li:nth-child(3) {
       display: none; } }
 
 #overlay {
-  width: calc(100% - 5px);
+  width: calc(100% - 10px);
   height: 175px;
   margin-top: 10px;
-  height: 180px;
+  width: 100%;
   background-image: url("http://transparenttextures.com/patterns/clean-gray-paper.png");
+  opacity: 0.7;
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 0;
   z-index: 1; }
   @media only screen and (max-width: 1065px) {
     #overlay {
