@@ -1,7 +1,7 @@
 .news-container {
-  // background-color: darkgrey;
+  background-color: darkgrey;
   width: 100%;
-  height: $full-page-height - 600px;
+  height: $full-page-height - 800px;
   font-family: arial;
   margin: 0 auto;
   position: relative;
@@ -9,44 +9,25 @@
 
 @mixin news-item {
   background-color: $white;
-  // float: left;
   position: absolute;
   width: 175px;
-  height: 175px;
+  height: 185px;
 }
 
-ul { list-style: none; }
-
-ul small {
-  color: #666;
-}
 
 li:nth-child(1) {
   @include news-item;
-  margin: 0 5px 0 0;
-  max-height: 175px;
-  left: 0;
-}
-
-li:nth-child(1) h2, small, p {
-  padding-left: 12.5px;
-  float: left;
   left: 0;
 }
 
 li:nth-child(2) {
   @include news-item;
-  // margin-right: 5px;
   left: 50%;
   transform:translateX(-50%);
     @media #{$information-phone} {
       transition: display 0.5s ease;
-      display: none;;
+      display: none;
     }
-}
-
-li:nth-child(2) h2, small, p {
-  padding-left: 12.5px;
 }
 
 li:nth-child(3) {
@@ -55,12 +36,4 @@ li:nth-child(3) {
   @media #{$information-phone} {
     display: none;
   }
-}
-
-li:nth-child(3) h2, small, p {
-  padding-left: 12.5px;
-}
-
-h2:nth-of-type(3) {
-  padding-top: 25px;
 }
