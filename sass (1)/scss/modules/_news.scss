@@ -16,6 +16,9 @@
 li:nth-child(1) {
   @include news-item;
   left: 0;
+    h3 {
+      margin-top: 20px;
+    }
 }
 
 li:nth-child(2) {
@@ -31,6 +34,9 @@ li:nth-child(2) {
 li:nth-child(3) {
   @include news-item;
   right: 0;
+    h3 {
+      margin-top: 35px;
+    }
   @media #{$information-phone} {
     display: none;
   }

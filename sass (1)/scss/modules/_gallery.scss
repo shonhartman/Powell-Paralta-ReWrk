@@ -1,0 +1,26 @@
+.gallery {
+  background-color: green;
+  width: 100%;
+  height: 500px;
+  margin-top: -20px;
+    h1 {
+      color: $white;
+      font-family: impact;
+      font-size: 2rem;
+      text-transform: uppercase;
+      text-align: center;
+    }
+}
+
+#mountain {
+  width: 30%;
+  height: $box-height;
+  background-color: red;
+  border: 10px solid white;
+  float: left;
+  // margin-right: 1.75%;
+  // background-image: url("https://i.ytimg.com/vi/AiUY6X-JfMU/maxresdefault.jpg");
+  // background-size: 250%;
+  // background-position: 55% 40%;
+
+}

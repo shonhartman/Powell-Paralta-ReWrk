@@ -31,7 +31,7 @@ p {
 ul { list-style: none; }
 
 small {
-  color: #666;
+  color: $light-text;
   font-size: 8px;
   @include text-padding;
 }
