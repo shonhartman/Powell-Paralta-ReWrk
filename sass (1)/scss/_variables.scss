@@ -16,3 +16,8 @@ $information-tablet: "only screen and (max-width : 1065px)";
 
 //other
 $box-shadow: 0px 2px $slightly-transparent;
+
+@mixin translate-center {
+  left: 50%;
+  transform: translateX(-50%);
+}

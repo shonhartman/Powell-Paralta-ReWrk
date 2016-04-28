@@ -11,6 +11,12 @@
   position: absolute;
   width: 175px;
   height: 185px;
+    @media #{$information-phone} {
+      margin-top: 5px;
+      width: 174px;
+      @include translate-center;
+      top: 125px
+    }
 }
 
 li:nth-child(1) {

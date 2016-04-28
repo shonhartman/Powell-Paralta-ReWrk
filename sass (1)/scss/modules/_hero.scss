@@ -6,9 +6,9 @@
       transition: margin-top 0.5s ease;
       margin-top: 25px;
     }
-    @media #{$information-phone} {
-      display: none;
-    }
+    // @media #{$information-phone} {
+    //   display: none;
+    // }
 }
 
 .logo {
@@ -23,6 +23,22 @@
   z-index: 2;
 }
 
+.phone-logo {
+  // background-color: red;
+  background-image: url('../images/peralta-logo.png');
+  background-size: 175px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 75%;
+  height: 130px;
+  position: absolute;
+  @include translate-center;
+  display: none;
+    @media #{$information-phone} {
+      display: block;
+    }
+}
+
 .hero-photo {
   @include hero-sizing;
   height: calc($box-height + 5px);
@@ -32,6 +48,9 @@
   background-repeat: no-repeat;
   background-position: -65px -60px;
   position: relative;
+    @media #{$information-phone} {
+      display: none;
+    }
 }
 
 #overlay {
@@ -42,4 +61,7 @@ opacity: 0.7;
 position: absolute;
 bottom: 0;
 z-index: 1;
+  @media #{$information-phone} {
+    background-image: none;
+  }
 }

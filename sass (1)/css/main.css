@@ -264,6 +264,13 @@ li:nth-child(1) {
   width: 175px;
   height: 185px;
   left: 0; }
+  @media only screen and (max-width: 520px) {
+    li:nth-child(1) {
+      margin-top: 5px;
+      width: 174px;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 125px; } }
   li:nth-child(1) h3 {
     margin-top: 20px; }
 
@@ -276,6 +283,13 @@ li:nth-child(2) {
   transform: translateX(-50%); }
   @media only screen and (max-width: 520px) {
     li:nth-child(2) {
+      margin-top: 5px;
+      width: 174px;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 125px; } }
+  @media only screen and (max-width: 520px) {
+    li:nth-child(2) {
       transition: display 0.5s ease;
       display: none; } }
 
@@ -285,6 +299,13 @@ li:nth-child(3) {
   width: 175px;
   height: 185px;
   right: 0; }
+  @media only screen and (max-width: 520px) {
+    li:nth-child(3) {
+      margin-top: 5px;
+      width: 174px;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 125px; } }
   li:nth-child(3) h3 {
     margin-top: 35px; }
   @media only screen and (max-width: 520px) {
@@ -307,9 +328,21 @@ li:nth-child(3) {
     .logo {
       transition: margin-top 0.5s ease;
       margin-top: 25px; } }
+
+.phone-logo {
+  background-image: url("../images/peralta-logo.png");
+  background-size: 175px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 75%;
+  height: 130px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none; }
   @media only screen and (max-width: 520px) {
-    .logo {
-      display: none; } }
+    .phone-logo {
+      display: block; } }
 
 .hero-photo {
   width: calc(100% - 10px);
@@ -346,23 +379,89 @@ li:nth-child(3) {
       margin-top: 25px; } }
   @media only screen and (max-width: 520px) {
     #overlay {
-      display: none; } }
+      background-image: none; } }
 
 .gallery {
-  background-color: green;
   width: 100%;
-  height: 500px;
-  margin-top: -20px; }
+  height: 270px; }
   .gallery h1 {
     color: #FEFEFE;
-    font-family: impact;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
     text-transform: uppercase;
     text-align: center; }
 
 #mountain {
-  width: 30%;
-  height: 175px;
-  background-color: red;
-  border: 10px solid white;
+  width: 164px;
+  height: 124px;
+  border: 5px solid #FEFEFE;
+  margin-right: 3px;
+  float: left;
+  background-image: url("../images/sk8er-4.png");
+  background-size: 135%;
+  background-repeat: no-repeat;
+  background-position: 80% 40%; }
+  #mountain h1 {
+    padding-top: 20px; }
+  @media only screen and (max-width: 520px) {
+    #mountain {
+      margin-bottom: 5px;
+      margin-top: -10px;
+      position: absolute;
+      top: 485px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: inline-block; } }
+
+#mullen {
+  width: 164px;
+  height: 124px;
+  border: 5px solid #FEFEFE;
+  margin-right: 3px;
+  background-image: url("../images/sk8er-3.png");
+  background-size: 135%;
+  background-repeat: no-repeat;
+  background-position: 20% 10%;
   float: left; }
+  #mullen h1 {
+    padding-top: 20px; }
+  @media only screen and (max-width: 520px) {
+    #mullen {
+      margin-bottom: 5px;
+      margin-top: -10px;
+      position: absolute;
+      top: 338px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: inline-block; } }
+
+#guerrero {
+  width: 168px;
+  height: 260px;
+  border: 5px solid #FEFEFE;
+  background-image: url("../images/sk8er-2.png");
+  background-size: 285%;
+  background-repeat: no-repeat;
+  background-position: 75% 50%;
+  float: right; }
+  #guerrero h1 {
+    padding-top: 90px; }
+  @media only screen and (max-width: 520px) {
+    #guerrero {
+      display: none; } }
+
+#caballero {
+  width: 341px;
+  height: 124px;
+  margin-top: 2px;
+  border: 5px solid #FEFEFE;
+  background-image: url("../images/sk8er-1.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 40% 50%;
+  float: left; }
+  #caballero h1 {
+    padding-top: 30px; }
+  @media only screen and (max-width: 520px) {
+    #caballero {
+      display: none; } }
