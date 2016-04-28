@@ -1,0 +1,9 @@
+.boards {
+  width: 100%;
+  height: $box-height;
+  background-color: $white;
+  margin-top: 15px;
+    @media #{$information-phone} {
+      display: none;
+    }
+}
