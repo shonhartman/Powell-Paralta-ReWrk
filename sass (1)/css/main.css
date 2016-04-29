@@ -31,7 +31,7 @@ small {
 
 .wrapper {
   width: 100%;
-  height: 1500px;
+  height: 1100px;
   max-width: 1500px;
   background-image: url("../images/bg.jpg");
   background-size: cover;
@@ -50,7 +50,7 @@ small {
 .container {
   width: 50%;
   max-width: 530px;
-  height: 1500px;
+  height: 1000px;
   margin: 0 auto;
   position: relative;
   z-index: 1; }
@@ -505,8 +505,95 @@ h4 {
   height: 175px;
   background-color: #FEFEFE;
   margin-top: 20px; }
-  .contact h2, .contact p {
-    float: left;
-    max-width: 100px; }
-  .contact input {
-    float: right; }
+
+.contact-left-column {
+  width: 50%;
+  margin: 0;
+  float: left; }
+
+form {
+  width: 50%;
+  height: 175px;
+  float: left; }
+  form input {
+    display: inline-block;
+    width: 225px;
+    float: right;
+    margin: 5px;
+    box-shadow: inset 0.1px 0.1px #D2D2D2; }
+
+::-webkit-input-placeholder {
+  color: #D2D2D2;
+  font-size: 6px;
+  padding-left: 5px;
+  padding-top: 0; }
+
+#form-message {
+  height: 75px; }
+
+#submit-button {
+  width: 85px;
+  font-size: 6px;
+  background-color: #B42930;
+  text-transform: uppercase;
+  color: #FEFEFE;
+  border: none; }
+
+.social-footer {
+  height: 75px;
+  width: 300px; }
+
+.social {
+  width: 275px;
+  height: 40px;
+  float: right;
+  margin-bottom: 10px; }
+  @media only screen and (max-width: 1065px) {
+    .social {
+      transition: display 0.5s ease;
+      display: none; } }
+
+.facebook-footer {
+  width: 35px;
+  height: 35px;
+  margin-right: 2px;
+  float: left;
+  background-color: #777;
+  margin-left: 10px; }
+  .facebook-footer .fa-facebook {
+    padding: 10px 0 0 12px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5); }
+
+.rss-footer {
+  width: 35px;
+  height: 35px;
+  margin-right: 2px;
+  float: left;
+  background-color: #777; }
+  .rss-footer .fa-rss {
+    padding: 10px 0 0 12px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5); }
+
+.twitter-footer {
+  width: 35px;
+  height: 35px;
+  margin-right: 2px;
+  float: left;
+  background-color: #777; }
+  .twitter-footer .fa-twitter {
+    padding: 10px 0 0 12px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5); }
+
+.youtube-footer {
+  width: 35px;
+  height: 35px;
+  margin-right: 2px;
+  float: left;
+  background-color: #777; }
+  .youtube-footer .fa-youtube {
+    padding: 10px 0 0 12px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5); }

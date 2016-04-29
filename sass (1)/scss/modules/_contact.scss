@@ -3,12 +3,96 @@
   height: $box-height;
   background-color: $white;
   margin-top: 20px;
-    h2, p {
-      float: left;
-      max-width: 100px;
-    }
+}
 
+.contact-left-column {
+  width: 50%;
+  margin: 0;
+  float: left;
+}
+
+form {
+  width: 50%;
+  height: $box-height;
+  float: left;
     input {
+      display: inline-block;
+      width: 225px;
       float: right;
+      margin: 5px;
+      box-shadow: inset .1px .1px $light-text;
     }
+}
+
+::-webkit-input-placeholder {
+  color: $light-text;
+  font-size: 6px;
+  padding-left: 5px;
+  padding-top: 0;
+}
+
+#form-message {
+  height: 75px;
+}
+
+#submit-button {
+  width: 85px;
+  font-size: 6px;
+  background-color: $accent;
+  text-transform: uppercase;
+  color: $white;
+  border: none;
+}
+
+//Social Icons ////////////////////////////////////////////
+
+.social-footer {
+  height: 75px;
+  width: 300px;
+}
+
+.social {
+  width: 275px;
+  height: 40px;
+  float: right;
+  margin-bottom: 10px;
+    @media #{$information-tablet} {
+      transition: display 0.5s ease;
+      display: none;
+    }
+}
+
+@mixin social-box-footer {
+  width: 35px;
+  height: 35px;
+  margin-right: 2px;
+  float: left;
+  background-color: #777;
+}
+
+@mixin social-icon {
+  padding: 10px 0 0 12px;
+  text-align: center;
+  color: $slightly-transparent;
+}
+
+.facebook-footer {
+  @include social-box-footer;
+  margin-left: 10px;
+    .fa-facebook { @include social-icon ;}
+}
+
+.rss-footer {
+  @include social-box-footer;
+    .fa-rss { @include social-icon;}
+}
+
+.twitter-footer {
+  @include social-box-footer;
+    .fa-twitter { @include social-icon;}
+}
+
+.youtube-footer {
+  @include social-box-footer;
+    .fa-youtube { @include social-icon;}
 }
