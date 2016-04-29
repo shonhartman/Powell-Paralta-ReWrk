@@ -1,0 +1,14 @@
+.contact {
+  width: 100%;
+  height: $box-height;
+  background-color: $white;
+  margin-top: 20px;
+    h2, p {
+      float: left;
+      max-width: 100px;
+    }
+
+    input {
+      float: right;
+    }
+}
