@@ -3,12 +3,29 @@
   height: $box-height;
   background-color: $white;
   margin-top: 20px;
+    @media #{$information-phone} {
+      position: absolute;
+      top: 790px;
+      width: 174px;
+      height: 225px;
+
+      @include translate-center;
+    }
+  p {
+    @media #{$information-phone} {
+      display: none;
+    }
+  }
 }
 
 .contact-left-column {
   width: 50%;
   margin: 0;
   float: left;
+    @media #{$information-phone} {
+      float: none;
+      width: 100%;
+  }
 }
 
 form {
@@ -21,8 +38,28 @@ form {
       float: right;
       margin: 5px;
       box-shadow: inset .1px .1px $light-text;
+        @media #{$information-phone} {
+          width: 125px;
+          position: absolute;
+      }
     }
+
 }
+
+input:first-of-type {
+    @media #{$information-phone} {
+      top: 40px;
+      right: 18px;
+  }
+}
+
+input:nth-of-type(2) {
+    @media #{$information-phone} {
+      top: 70px;
+      right: 18px;
+  }
+}
+
 
 ::-webkit-input-placeholder {
   color: $light-text;
@@ -33,6 +70,11 @@ form {
 
 #form-message {
   height: 75px;
+    @media #{$information-phone} {
+      top: 100px;
+      right: 18px;
+
+  }
 }
 
 #submit-button {
@@ -42,25 +84,13 @@ form {
   text-transform: uppercase;
   color: $white;
   border: none;
+    @media #{$information-phone} {
+      right: 18px;
+      top: 190px;
+  }
 }
 
 //Social Icons ////////////////////////////////////////////
-
-.social-footer {
-  height: 75px;
-  width: 300px;
-}
-
-.social {
-  width: 275px;
-  height: 40px;
-  float: right;
-  margin-bottom: 10px;
-    @media #{$information-tablet} {
-      transition: display 0.5s ease;
-      display: none;
-    }
-}
 
 @mixin social-box-footer {
   width: 35px;
@@ -68,12 +98,18 @@ form {
   margin-right: 2px;
   float: left;
   background-color: #777;
+    @media #{$information-phone} {
+      display: none;
+    }
 }
 
 @mixin social-icon {
   padding: 10px 0 0 12px;
   text-align: center;
   color: $slightly-transparent;
+    @media #{$information-phone} {
+      display: none;
+    }
 }
 
 .facebook-footer {

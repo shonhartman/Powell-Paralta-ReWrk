@@ -34,6 +34,7 @@
     }
 
     @media #{$information-phone} {
+      height: 1200px;
       transition: background-color, 1.5s ease;
       background-color: $dark-text;
     }
